@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="android.dengmin.bluetoothcommunication">
 
+    <!-- 由于蓝牙设备是系统设备，所以需要有相应的权限支持 -->
+    <!-- 程序中使用了蓝牙技术需要添加的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <!-- 当本程序需要和其他程序绑定时添加的权限 -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
